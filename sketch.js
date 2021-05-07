@@ -47,6 +47,7 @@ function draw() {
     if(block1.isTouching(ball) && ball.bounceOff(block1)){
         ball.shapeColor = "blue";
         music.play();
+        
     }
 
 
@@ -54,7 +55,8 @@ function draw() {
     if(block2.isTouching(ball)&& ball.bounceOff(block2)
     ){
         ball.shapeColor = "orange";
-        music.play();
+        music.stop();
+        ball.setVelocity(0,0);
         //write code to set velocityX and velocityY of ball as 0
         
     }
